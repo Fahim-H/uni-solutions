@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int array_min(int a[],int n)
+ {
+	int minimum=a[0];
+	for(int i=1;i<n;i++)
+	 if(a[i]<minimum)
+	   minimum=a[i];
+	return minimum;
+
+ }
+int main() {
+	int a[10],min,i;
+	for(i=0;i<10;i++)
+		cin>>a[i];
+	min=array_min(a,10);
+;
+	cout<<min<<endl;
+	return 0;
+}
