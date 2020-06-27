@@ -1,0 +1,25 @@
+#include <iostream>
+#include<string>
+#include <cstring>
+using namespace std;
+int main()
+{
+    int length;
+    cin>>length;
+    cin.ignore();
+    const int index=length;
+    char word[index];
+    char new_word[index];
+    fgets(word,index+1,);
+    int new_length=0;
+    for(int i=0;i<index+1;i++){
+        if(word[i]!='a' && word[i]!='e' && word[i]!='i' && word[i]!='o' && word[i]!='u' && word[i]!=' '){
+            new_word[new_length]=word[i];
+            new_length++;
+        }
+    }
+    for(int i=0;i<new_length;i++){
+        cout<<new_word[i];
+    }
+    return 0;
+}
