@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void  array_largest(int  a[],int  n){
+    int index=0,maximum=a[0];
+    for(int i=1;i<n;i++)
+         if(a[i]>=maximum){ 
+            maximum=a[i];
+            index=i;
+         }
+    cout<<index<<' '<<maximum;
+}
+int main()
+{
+    int  a[10],i;
+    for(i=0;i<10;i++)
+        cin>>a[i];
+    array_largest(a,10);
+    return 0;
+}
