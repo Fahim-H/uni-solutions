@@ -1,0 +1,31 @@
+// primes between two integers, if no prime it prints N
+
+#include <iostream>
+typedef long long int ll;
+using namespace std;
+
+bool isprime(int num){
+    bool is=true;
+    if(num==1)return false;
+    for(int i=2;i<=num/2;i++)
+    {
+        if(num%i==0)
+        {
+            is=false;
+            return false;
+        }
+   }
+   return is;
+}
+int main(){
+    int a,b; cin>>a>>b;
+
+    int cnt=0;
+    for(int i=a; i<=b; i++){
+        bool is = isprime(i);
+        if(is){cout<<i<<" "; cnt++;}
+        else continue;
+    }
+    if(cnt==0)cout<<"N"<<endl;
+    return 0;
+}
