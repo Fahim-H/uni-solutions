@@ -1,0 +1,22 @@
+//Write a program that prompts the user to enter a letter grade A/a,B/b,C/c,D/d, or F/f 
+//and displays its corresponding numeric value 4,3,2,1, or 0. 
+//If the user enter other letters the progam should output 'N'.
+
+#include <iostream>
+typedef long long int ll;
+using namespace std;
+
+int main(){
+    char ch; cin>>ch;
+    ch = toupper(ch);
+    switch(ch)
+    {
+        case 'A':cout<<4<<endl; break;
+        case 'B':cout<<3<<endl; break;
+        case 'C':cout<<2<<endl; break;
+        case 'D':cout<<1<<endl; break;
+        case 'F':cout<<0<<endl; break;
+        default: cout<<"N"<<endl; break;
+    }
+    return 0;
+}
