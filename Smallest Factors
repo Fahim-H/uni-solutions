@@ -1,0 +1,22 @@
+//Writer a program that read an interger 
+//and displays all its smallest factors in increasing order.
+//【Input Example】120
+//【Output Example】2 2 2 3 5
+
+#include <iostream>
+typedef long long int ll;
+using namespace std;
+
+int main(){
+    int num; cin>>num;
+    int div = 2;
+    while(num/div != 1){
+        if(num%div == 0){
+            cout<<div<<" ";
+            num /= div;
+        }
+        else div++;
+    }
+    cout<<num<<endl;
+    return 0;
+}
