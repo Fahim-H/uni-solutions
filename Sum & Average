@@ -1,0 +1,25 @@
+/*【Question Description】Write a program that reads an unspecified number of integers,
+computes the total and the average of input values. 
+Your program ends with the input 0. The output average should be rounded up to 2 decimal places.
+1 2 3 4 5 0 -> sum is 15 average is 3.00 */
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int total=0, cnt=0;
+    bool flag=true;
+    while(flag){
+        int in; cin>>in;
+        if(in!=0)cnt += 1;
+        total += in;
+        if(in==0)flag=false;
+    }
+
+
+    double avg = total/cnt;
+    cout<<"sum is "<<total<<endl<<"average is "<<fixed<<setprecision(2)<<avg<<endl;
+
+    return 0;
+}
