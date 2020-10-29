@@ -1,0 +1,22 @@
+/*【Question Description】Write a program that converts one string to another string.
+If the letters in input string are lowercase, the program should convert them
+into uppercase letters. If the letters in input string are uppercase,
+the program should convert them into lowercase letters.
+HELLO world -> hello WORLD /*
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    string str;
+    getline(cin,str);
+
+
+    for(int i=0; i<str.length(); i++){
+        if(isupper(str[i]))str[i]=tolower(str[i]);
+        else str[i]=toupper(str[i]);
+    }
+    cout<<str<<endl;
+    return 0;
+}
