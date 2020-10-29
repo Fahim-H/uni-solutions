@@ -1,0 +1,29 @@
+/*【Question Description】Write a program that outputs the first n numbers that
+can be divisible by 3, and the user controls the number n of output numbers.
+The two numbers are separated by a space and 5 integers per line output. 
+Note that the first line of the output is not a blank line. 
+Please use a void function to finish the task.*/
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+void show(int n)
+{
+  int count=0,i;
+  for(i=3;count<n;i++){
+	if(i%3==0){
+		cout<<i<<" ";
+		count++;
+		if(count%5==0&&count!=0)
+	  	    cout<<endl;
+        }
+    }
+}
+int main()
+{
+    int num;
+    cin>>num;
+    show(num);
+    return 0;
+}
