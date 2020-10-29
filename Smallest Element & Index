@@ -1,0 +1,25 @@
+//Write a program that reads some integers and finds the largest 
+//index of the smallest element in this array,
+//then prints the index and the smallest element.
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    int nums[10];
+    for(int i=0; i<10; i++)cin>>nums[i];
+
+    int min_value=1000, min_in=-1;
+    for(int i=0; i<10; i++){
+        if(nums[i]<=min_value){
+            min_value=nums[i];
+            min_in=i;
+        }
+    }
+    cout<<min_in<<" "<<min_value<<endl;
+    return 0;
+}
+
