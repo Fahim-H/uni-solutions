@@ -1,0 +1,19 @@
+/*【Question Description】Write a program that prompts the user 
+to enter a positive even number n and calculates the sum of 
+consecutive even numbers from 2 to this positive
+even number, as follows: 2 +4+ 6+...+n.*/
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int num; cin>>num;
+
+    int sum=0;
+    for(int i=2; i<=num; i+=2){
+        sum += i;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
