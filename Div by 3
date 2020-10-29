@@ -1,0 +1,24 @@
+/*Write a program that gets the sum of all numbers that can be
+divisible by 3 and not by 5 between two specified integers.
+Input Example】 12 18
+【Output Example】30
+【Example Instruction】
+sum=12+18. There are 12,13,14,15,16,17,18 between 12 and 18. 12 and 18
+can be divisible by 3 and not by 5 */
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int a,b; cin>>a>>b;
+
+    int sum=0;
+    for(int i=a; i<=b; i++){
+        if(i%3==0 && i%5!=0){
+            sum += i;
+        }
+    }
+    cout<<sum<<endl;
+    return 0;
+}
