@@ -1,0 +1,20 @@
+/*【Question Description】Use a do-while loop to find the largest integer n such that n*n*n is less than a positive integer N.
+【Input Format】a positive integer
+【Output Format】a positive integer
+【Input Example】1000
+【Output Example】9*/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num; cin>>num;
+    int chekr=1;
+    do{
+        chekr++;
+    }while(chekr*chekr*chekr<num);
+
+    cout<<chekr-1<<endl;
+    return 0;
+}
