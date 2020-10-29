@@ -1,0 +1,23 @@
+/*【Question Description】Write a program that reads 10 integers 
+stored in an array and an integer, counts the occurrence 
+of this integer in the array.
+【Input Example】
+2
+2 3 4 2 2 3 5 2 5 1
+【Output Example】
+4 */
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int checker; cin>>checker;
+    int cnt=0;
+    for(int i=0;i<10;i++){
+        int in; cin>>in;
+        if(in==checker)cnt++;
+    }
+    cout<<cnt<<endl;
+    return 0;
+}
