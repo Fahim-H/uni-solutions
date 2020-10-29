@@ -1,0 +1,41 @@
+/*Design a class named Square to represent a square. The class contains:
+An int data field named Side_length that specify the side length of the square;
+A no-arg constructor that creates  a default  square with Side_length 1；
+A constructor that creates  a cuboid with one parameter Side_length;
+A function named getArea() that returns  the area of this square;
+A function named getPerimeter() that returns  the perimeter.
+write a test program that creates a  Square object. Assign Side_length to the object. 
+Display the area and perimeter .*/
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+class Square{
+    public:
+        int side;
+        Square()
+        {
+            side=1;
+        }
+        void cubeoid()
+        {
+
+        }
+        int getArea()
+        {
+            return side*side;
+        }
+        int getPerimeter()
+        {
+            return 4*side;
+        }
+};
+int main()
+{
+    Square ob;
+    cin>>ob.side;
+    cout<<ob.getArea()<<" "<<ob.getPerimeter()<<endl;
+    return 0;
+}
