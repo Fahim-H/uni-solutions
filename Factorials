@@ -1,0 +1,19 @@
+//【Question Description】Write a function to find the factorial using the formula n!=1*2*3*...*n,
+//such as 8!=1*2*3*4*5 *6*7*8. Then write a program that prompts the user to input 
+//three arbitrary integers n1, n2, n3 and ouputs correspoding factorial based on the function.
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+int facts(int num){
+    if(num>=1)return num*facts(num-1);
+    else return 1;
+}
+int main()
+{
+    int a,b,c; cin>>a>>b>>c;
+    int ans1=facts(a), ans2=facts(b),ans3=facts(c);
+    cout<<a<<"!="<<ans1<<endl<<b<<"!="<<ans2<<endl<<c<<"!="<<ans3<<endl;
+    return 0;
+}
