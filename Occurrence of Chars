@@ -1,0 +1,31 @@
+/*Write a test program that reads a string and a character and
+displays the number of occurrences of the character in the string.
+【Input Example】
+Welcome to C++! 
+o
+【Output Example】
+2 */
+
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+int count (const char s[],char a){
+    int cnt=0;
+    for(int i=0; s[i]; i++){
+        if(s[i]!=a)continue;
+        else cnt++;
+    }
+    return cnt;
+}
+int main()
+{
+    char s[1000], c;
+    cin.getline(s,1000);
+    cin>>c;
+
+    int ans = count(s,c);
+    cout<<ans<<endl;
+    return 0;
+}
