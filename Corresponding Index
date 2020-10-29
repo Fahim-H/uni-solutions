@@ -1,0 +1,18 @@
+/*Write a program that reads a string, an index number and
+displays the character corresponding to the index in the input string.
+welcome to c++! 3 -> c */
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    char ch[1000];
+    fgets(ch,1000,stdin);
+    int in; cin>>in;
+
+    cout<<ch[in]<<endl;
+    return 0;
+}
