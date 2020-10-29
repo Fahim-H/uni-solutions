@@ -1,0 +1,26 @@
+//Write a program that finds out how many numbers less 
+//than or equal to the average. The numbers of the integers is 5.
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    int nums[5], sum=0;
+
+    for(int i=0;i<5;i++){
+        cin>>nums[i];
+        sum += nums[i];
+    }
+
+    double avg = sum/5.0, cnt=0;
+    for(int i=0;i<5;i++){
+        if(nums[i]<=avg){
+            cnt++;
+        }
+    }
+    cout<<cnt<<endl;
+    return 0;
+}
