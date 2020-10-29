@@ -1,0 +1,25 @@
+//Write a program that reads integers,finds  the largest of them,and 
+//counts of its occurrences.Assume that the input ends with number 0.
+
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    int cnt=0,max=-1;
+    while(true){
+        int in; cin>>in;
+        if(in==0)break;
+        if(in>max){
+            max=in;
+            cnt=1;
+        }
+        if(in==max)cnt++;
+    }
+    cout<<"The largest number is "<<max<<endl;
+    cout<<"The occurrence count of the largest number is "<<cnt-1<<endl;
+    return 0;
+}
